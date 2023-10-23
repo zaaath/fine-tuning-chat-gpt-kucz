@@ -7,7 +7,7 @@ def get_completions() -> Completions:
     "I need to file 2020 taxes by Friday",
   ]
   assistant_reply = '''```python
-add(task_name='File 2020 taxes',deadline="Friday")
+add_task(title="File 2020 taxes",deadline="Friday")
 ```
 '''
   return [{

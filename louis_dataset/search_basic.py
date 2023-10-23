@@ -2,12 +2,12 @@ from .type_completion import Completions
 
 def get_completions() -> Completions:
   user_input_variants = [
-    "add a task to file 2020 taxes",
-    "Remind me to file 2020 taxes",
-    "I need to file 2020 taxes",
+    "find tasks that mention taxes",
+    "List all tasks related to taxes",
+    "help me find all tasks related to taxes",
   ]
   assistant_reply = '''```python
-add_task(title="File 2020 taxes")
+search_tasks(task_title='tax')
 ```
 '''
   return [{
